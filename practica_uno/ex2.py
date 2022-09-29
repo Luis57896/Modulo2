@@ -10,7 +10,7 @@ def arrayCreator(n):
       array1.append(i)
    return array1
 
-# Función para identificar crear array de números primos
+# Función para crear array de números primos
 def arrayCreator2(array1):
     array2=[]
     for i in range(2,n+1):
