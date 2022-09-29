@@ -10,15 +10,29 @@ def arrayCreator(n):
       array1.append(i)
    return array1
 
-# Función para identificar cuáles son números primos
-#def primos(arr):
-#    array2 = []
-#    for i in array1:
-#        if i%2==1 and i%i==0:
-#            array2.append(i)
-#    return array2
+# Función para identificar crear array de números primos
+def arrayCreator2(array1):
+    array2=[]
+    for i in range(2,n+1):
+        num=primo(i)
+        if num==True:
+            array2.append(i)
+    return array2
 
+# Función para identificar números primos
+def primo(i):
+    for n in range(2,i):
+        if i % n == 0:
+            return False
+    return True
+
+# Input
 n=int(sys.argv[1])
+
+# Llamar a funciones
 array1=arrayCreator(n)
+array2=arrayCreator2(array1)
+
+# Imprimir arreglos
 print(array1)
-#primos(array1) 
+print(array2) 
